@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPLS Class of 2022 Countdown</title>
+    <title>Senior Class of 2022 Countdown</title>
     <style>
         /* general styling */
 :root {
@@ -87,6 +87,15 @@ li span {
     0 0 150px rgb(0, 255, 106);
 }
 
+.corners {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: whitesmoke;
+  padding: 15px;
+  position: absolute;
+}
+
 @media all and (max-width: 768px) {
   h1 {
     font-size: calc(1.5rem * var(--smaller));
@@ -100,9 +109,18 @@ li span {
     font-size: calc(3.375rem * var(--smaller));
   }
 }
+
+#selfpromo {
+  top: 0px;
+  right: 0px;
+}
+
     </style>
 </head>
 <body>
+    <div id="selfpromo" class="corners">
+      <a href="https://github.com/GVLocke/Senior-Countdown" target="_blank" rel="noopener noreferrer" >Source Code</a>
+    </div>
     <div class="container">
         <h1 class="neon" id="headline">Senior Class of 2022 Graduates in</h1>
         <div id="countdown">
