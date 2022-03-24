@@ -116,7 +116,7 @@ li span {
         <div id="content" class="emoji">
           <span>🥳</span>
           <span>🎉</span>
-          <span>🎂</span>
+          <span>🎓</span>
         </div>
       </div>
 </body>
@@ -127,8 +127,6 @@ li span {
         hour = minute * 60,
         day = hour * 24;
 
-  //I'm adding this section so I don't have to keep updating this pen every year :-)
-  //remove this if you don't need it
   let today = new Date(),
       dd = String(today.getDate()).padStart(2, "0"),
       mm = String(today.getMonth() + 1).padStart(2, "0"),
@@ -154,14 +152,12 @@ li span {
           document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
           document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
         if (distance < 0) {
           document.getElementById("headline").innerText = "WE DID IT!";
           document.getElementById("countdown").style.display = "none";
           document.getElementById("content").style.display = "block";
           clearInterval(x);
         }
-        //seconds
       }, 0)
   }());
 </script>
