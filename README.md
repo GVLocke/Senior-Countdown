@@ -4,4 +4,5 @@ Simple website that counts down to my senior graduation. As I don't know anythin
 
 ## Goals
 - Add a live progress bar
+- Improve site performance (Right now it's kinda a GPU Hog)
 - Possibly tweak the overall design (idk if I'm a big fan of the neon or not the longer I look at it)
