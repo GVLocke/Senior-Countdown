@@ -4,3 +4,4 @@ Simple website that counts down to my senior graduation. As I don't know anythin
 
 ## Goals
 - Possibly tweak the overall design
+- Correct layout issues on Mobile 
