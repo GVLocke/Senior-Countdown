@@ -35,6 +35,9 @@
     margin: 0 auto;
     text-align: center;
   }
+  a {
+    color: whitesmoke;
+  }
   
   h1 {
     font-weight: normal;
@@ -65,7 +68,7 @@
     color: white;
   }
   
-  
+  /* From Traf's CodePen: https://codepen.io/traf/pen/oKbaqQ */
   .progress {
     background: rgba(255, 255, 255, 0.212);
     justify-content: flex-start;
@@ -85,6 +88,8 @@
     height: 30px;
     width: 0;
   }
+
+  /* End */
   
   .emoji {
     display: none;
@@ -95,23 +100,6 @@
     font-size: 4rem;
     padding: 0 .5rem;
   }
-  /* From https://codepen.io/AllThingsSmitty/pen/VzXrgY */
-
-
-/*   .neon {
-    color: #fff;
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 40px rgb(0, 255, 106),
-      0 0 80px rgb(0, 255, 106),
-      0 0 90px rgb(0, 255, 106),
-      0 0 100px rgb(0, 255, 106),
-      0 0 150px rgb(0, 255, 106);
-  } */
-  
-  /* end */
   
   .corners {
     white-space: nowrap;
