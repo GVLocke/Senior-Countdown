@@ -39,8 +39,10 @@ function gPercent() {
 }
 
 function barPercent() {
+    let progress = document.querySelector('.progress');
+    let width = progress.offsetWidth;
     const percent = ms/semesterLength
-    return percent * 500
+    return percent * width
 }
 
 anime({
@@ -54,3 +56,19 @@ anime({
   });
 
 document.getElementById("gPercent").innerText = gPercent()
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   let resizer = new ResizeObserver(handleResize);
+//   resizer.observe(document.querySelector('.progress'));
+// });
+
+// function handleResize(entries) {
+//   console.log('resize called');
+//   let div = entries[0].target;
+//   console.log(div.contentRect.width)
+//   if (entries[0].contentRect.width < 768) {
+//     let width = div.contentRect.width;
+//     const percent = ms/semesterLength
+//     document.querySelector('.progress-value').contentRect.width = (percent * width)
+//   }
+// }

@@ -78,8 +78,7 @@
     padding: 0 5px;
     display: flex;
     height: 40px;
-    width: 500px;
-    left: 40px;
+    margin: auto;
   }
   
   .progress-value {
@@ -120,6 +119,9 @@
     }
     
     li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+    .container {
       font-size: calc(3.375rem * var(--smaller));
     }
   }
