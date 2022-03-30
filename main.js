@@ -59,7 +59,6 @@ function handleResize(entries) {
   let div = entries[0].target;
   anime({
     targets: 'div.progress-value',
-    delay: 400,
     width: barPercent(),
     easing: 'easeInOutQuint',
     borderRadius: '100px',
