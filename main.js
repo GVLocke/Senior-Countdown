@@ -45,30 +45,25 @@ function barPercent() {
     return percent * width
 }
 
-anime({
-    targets: 'div.progress-value',
-    delay: 400,
-    width: barPercent(),
-    borderRadius: '100px',
-    easing: 'easeInOutQuad',
-    direction: 'alternate',
-    loop:false
-  });
 
 document.getElementById("gPercent").innerText = gPercent()
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   let resizer = new ResizeObserver(handleResize);
-//   resizer.observe(document.querySelector('.progress'));
-// });
 
-// function handleResize(entries) {
-//   console.log('resize called');
-//   let div = entries[0].target;
-//   console.log(div.contentRect.width)
-//   if (entries[0].contentRect.width < 768) {
-//     let width = div.contentRect.width;
-//     const percent = ms/semesterLength
-//     document.querySelector('.progress-value').contentRect.width = (percent * width)
-//   }
-// }
+document.addEventListener('DOMContentLoaded', () => {
+  let resizer = new ResizeObserver(handleResize);
+  resizer.observe(document.querySelector('.progress'));
+});
+
+function handleResize(entries) {
+  console.log('resize called');
+  let div = entries[0].target;
+  anime({
+    targets: 'div.progress-value',
+    delay: 400,
+    width: barPercent(),
+    easing: 'easeInOutQuint',
+    borderRadius: '100px',
+    direction: 'alternate',
+    loop:false
+  });
+ }
