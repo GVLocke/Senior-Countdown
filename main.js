@@ -32,7 +32,7 @@
     
     let semesterStart = 1641306600000
 let ms = Number(new Date()) - semesterStart 
-let semesterLength = 11854830000
+let semesterLength = 11855700000
 
 function gPercent() {
     return Math.round(ms/semesterLength * 100)
