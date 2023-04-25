@@ -7,3 +7,5 @@ Progress bar animation uses the [Anime.js](https://animejs.com/) engine.
 ## Roadmap
 - [ ] Make the units singular when appropriate
 - [ ] Make the 0 units disappear when appropriate
+
+*The Likelihood that I actually do the above tasks seems rather low...*
