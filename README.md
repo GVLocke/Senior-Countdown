@@ -1,7 +1,7 @@
 # Senior-Countdown
 https://gvlocke.github.io/Senior-Countdown/
 
-Simple website that counts down to my college graduation (The date is speculation at this point). As I only know basic web design code, it's mostly a conglomeration of other people's stuff, specifically various Pens from [Matt Smith](https://codepen.io/AllThingsSmitty/pens/public) and [Traf](https://codepen.io/traf).<br>
+Simple website that counts down to my college graduation. It's mostly a conglomeration of other people's stuff, specifically various Pens from [Matt Smith](https://codepen.io/AllThingsSmitty/pens/public) and [Traf](https://codepen.io/traf).<br>
 Progress bar animation uses the [Anime.js](https://animejs.com/) engine.
 
 ## Roadmap
